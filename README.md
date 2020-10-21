@@ -5,7 +5,7 @@ a simple command line tool to open your smb protocol link in windows
 ## installation
 1. if you have installed `cargo`, you can clone this repository, and cd to it, then 
   just run `cargo install --path .`, done.
-2. download the binary and add it to your `PATH`
+2. download the binary from here [release](https://github.com/IWANABETHATGUY/windows-smp-open/releases/tag/0.1.0)and add it to your `PATH`
 
 ## usage
 ```bash
