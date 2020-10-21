@@ -4,7 +4,7 @@ fn main() -> Result<(), std::io::Error> {
     let matches = App::new("windows-smb-open")
         .version(env!("CARGO_PKG_VERSION"))
         .author(env!("CARGO_PKG_AUTHORS"))
-        .about("")
+        .about("a simple command line tool to open your smb protocol link in windows")
         .arg(
             Arg::with_name("link")
                 .value_name("link")
@@ -19,7 +19,6 @@ fn main() -> Result<(), std::io::Error> {
             res = res[4..].to_string();
         }
         Command::new("explorer")
-            .current_dir(&current_dir()?)
             .args(vec![res])
             .spawn()?;
     } else {
