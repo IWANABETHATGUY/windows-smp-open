@@ -1,5 +1,5 @@
 use clap::{App, Arg};
-use std::{env::current_dir, process::Command};
+use std::{process::Command};
 fn main() -> Result<(), std::io::Error> {
     let matches = App::new("windows-smb-open")
         .version(env!("CARGO_PKG_VERSION"))
